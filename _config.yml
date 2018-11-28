@@ -1,0 +1,22 @@
+author: "Maxim Bircu"
+title: "Maxim Bircu"
+email: maximbircu@gmail.com
+description: My personal web site.
+baseurl: ""
+url: "https://maximbircu.com"
+
+# Build settings
+markdown: kramdown
+permalink: preatty
+plugins:
+  - jekyll-feed
+  - jekyll-autoprefixer
+
+# Exclude from processing.
+# The following items will not be processed, by default. Create a custom list
+# to override the default setting.
+exclude:
+  - Gemfile
+  - Gemfile.lock
+sass:
+  sass_dir: _sass
