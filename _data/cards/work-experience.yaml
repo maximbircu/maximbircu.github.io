@@ -1,0 +1,29 @@
+# companyName - company name (ex: Ellation)
+# position - working position (ex: Android Developer )
+# description - Short description of activities that you did at that company
+# logoUrl - company logo url
+# companyWebSiteUrl - the url of commpany web site
+# duration - working duration
+
+key:
+  - companyName: Tekwill
+    position: "Android Fundamentals Mentor"
+    logoUrl: https://media.licdn.com/dms/image/C560BAQFMFIj-04oJ9g/company-logo_400_400/0?e=1551916800&v=beta&t=m0RuJS62UW5A6iNU7W1TcBM1Kg88XV43BdNN8bbnanI
+    companyWebSiteUrl: http://academy.tekwill.md/
+    duration: "07/2018 - Present"
+
+  - companyName: Ellation
+    position: "Android Developer"
+    logoUrl: https://media.licdn.com/dms/image/C4D0BAQHw3M2xe2vqqw/company-logo_400_400/0?e=1551916800&v=beta&t=tBVX83We4ZMcglv8r57Kdh5VMviStFWIY8fhBo9whYY
+    companyWebSiteUrl: http://www.ellation.com/
+    duration: "04/2018 - Present"
+
+  - companyName: "JivyGroup"
+    position: "Software Enginer"
+    description: "Working on multiple different projects for JivyGrop, 
+    maintaining trading mobile application of MarketsPulse and development of new mobile native projects also doing sometimes 
+    devops stuff and writing som scripts for CI of the mobile and other projects from the company. 
+    Maintaining of MarketsPulse web sites working on CMS improvments, working on new versions of MP sites based on React technologies."
+    logoUrl: https://media.licdn.com/dms/image/C4E0BAQEM-SCmsK9nUg/company-logo_200_200/0?e=1551916800&v=beta&t=AEBJ-FliHHxRbygilZOXX8a5ze2-Ymo1hc5xkHACe90
+    companyWebSiteUrl: http://www.jivygroup.com/
+    duration: "06/2016 - 03/2018"
