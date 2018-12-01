@@ -2,10 +2,12 @@
 <html lang="en">
 <head>
     {% include head.html %}
-    <link rel="stylesheet" href="{{ site.baseUrl }}main.css">
 </head>
 <body>
+<div class="content-container row">
+    {% include sidebar.html %}
     {{ content }}
-    {% include js-link.html %}
+</div>
+{% include js-link.html %}
 </body>
 </html>
