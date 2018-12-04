@@ -1,0 +1,19 @@
+<aside class="skills aside section">
+    <div class="section-inner">
+        <h2 class="heading">Skills</h2>
+        <div class="content">
+            <div class="skillset">
+                {% for skill in site.data.cards.skills %}
+                    <div class="item">
+                        <h3 class="level-title">{{ skill.title }}<span class="level-label">{{ skill.label }}</span></h3>
+                        <div class="level-bar">
+                            <div class="level-bar-inner" data-level="{{ skill.level }}%">
+                            </div>
+                        </div>
+                    </div>
+                {% endfor %}
+                <p><a class="more-link" href="{{ site.data.accounts.linkedin }}"><i class="fa fa-external-link"></i> More on Linkedin</a></p>
+            </div>
+        </div>
+    </div>
+</aside>
