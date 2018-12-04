@@ -1,0 +1,22 @@
+<section class="experience section">
+        <div class="section-inner">
+            <h2 class="heading">Work Experience</h2>
+            <div class="content">
+            {% for item in site.data.cards.work-experience.key %}
+                <div class="item row">
+                    <img src="{{ item.logoUrl }}" class="col-lg-3 company-logo" alt="">
+                    <div class="work-experience-heading col-lg-9">
+                        <h3 class="title ">
+                            {{ item.position }} <br/>
+                            <span class="place"><a href="{{ item.companyWebSiteUrl }}">{{item.companyName}}</a></span>
+                            <span class="year">({{ item.duration }})</span>
+                        </h3>
+                    </div>
+                    <p class="col-lg-12">{{ item.description }}</p>
+                </div>
+                <hr>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
