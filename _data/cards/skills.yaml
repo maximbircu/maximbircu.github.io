@@ -1,0 +1,23 @@
+# level-title - title of the skill
+# level-label - performance of the skill in one word
+# data-level - performance of the skill in percentage
+
+- title: "Java, Kotlin &amp; Android"
+  label: "Expert"
+  level : 66
+
+- title: "C# &amp; .NET"
+  label: "Expert"
+  level : 50
+
+- title: "Pyhton"
+  label: "Expert"
+  level : 30
+
+- title: "C &amp; C++"
+  label: "Intermediate"
+  level : 40
+
+- title: "Machine Learning"
+  label: "Baby steps"
+  level : 35
