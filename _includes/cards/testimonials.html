@@ -1,0 +1,17 @@
+<aside class="testimonials aside section">
+        <div class="section-inner">
+            <h2 class="heading">Testimonials</h2>
+            <div class="content">
+                {% for testimonial in site.data.cards.testimonials %}
+                    <div class="item">
+                        <blockquote class="quote">
+                            <p><i class="fa fa-quote-left"></i>{{ testimonial.content }}</p>
+                        </blockquote>
+                        <a href="{{ testimonial.author.linkedin }}}"><p class="source"><span class="name">{{ testimonial.author.name }}</span><br/><span class="title">{{ testimonial.author.position }}</span></a></p>
+                    </div>
+                {% endfor %}
+                <p><a class="more-link" href="#"><i class="fa fa-external-link"></i> More on Linkedin</a>
+                </p>
+            </div>
+        </div>
+    </aside>
