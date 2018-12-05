@@ -1,0 +1,32 @@
+# content - short recomandation
+# author - the author of the testimonial
+#   name - the name of the author
+#   position - the author's job position
+#   linkedin - the author's linked in profile
+
+- content: "Maxim is one of the best among all people I have ever met. 
+  Working with Maxim I found him as a fast learner person with great dedication, 
+  passion and desire to do great things."
+  author: 
+    name: "Nicu Maxian"
+    position: "Go Developer at Ellation"
+    linkedin: https://www.linkedin.com/in/nicu-maxian-b73105b1/
+
+- content: "Maxim is a talented and hardworking software
+  engineer with a critical thinking and wide variety of knowledge in different
+  areas of computer science. He is eager to share the knowledge with others and
+  doesn’t miss the opportunity to do so by creating amazing lectures and
+  delivering them with a great passion."
+  author: 
+    name: "Victor Luca"
+    position: "Front-end Developer"
+    linkedin: https://www.linkedin.com/in/luca-victor/
+
+- content: "I've been working with Maxim on some individual projects. 
+  I was impressed by how he can handle complex tasks, especially related to software 
+  architecture and system design. He definitely knows how to design an application from scratch. 
+  Also he is a language agnostic developer, and can quickly adapt to any technology stack."
+  author: 
+    name: "Luca Schidu"
+    position: "Software Developer at Pentalog"
+    linkedin: https://www.linkedin.com/in/luca-schidu-31b349a8"
