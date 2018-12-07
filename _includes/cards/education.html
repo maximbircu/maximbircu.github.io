@@ -1,16 +1,16 @@
 <aside class="education aside section">
-        <div class="section-inner">
-            <h2 class="heading">Education</h2>
-            <div class="content">
-                {% for institution in site.data.cards.education %}
-                    <a href="{{ institution.website }}" class="tum">
-                        <div class="item">
-                            <h3 class="title"><i class="fa fa-graduation-cap"></i> {{ institution.name }}</h3>
-                            <h4 class="university">{{ institution.description }} <span class="year">{{ institution.learningPeriod }}</span>
-                            </h4>
-                        </div>
-                    </a>
-                {% endfor %}
-            </div>
+    <div class="section-inner">
+        <h2 class="heading">Education</h2>
+        <div class="content">
+            {% for institution in site.data.cards.education %}
+                <a href="{{ institution.website }}" class="tum">
+                    <div class="item">
+                        <h3 class="title"><i class="fa fa-graduation-cap"></i> {{ institution.name }}</h3>
+                        <h4 class="university">{{ institution.description }} <span class="year">{{ institution.learningPeriod }}</span>
+                        </h4>
+                    </div>
+                </a>
+            {% endfor %}
         </div>
-    </aside>
+    </div>
+</aside>

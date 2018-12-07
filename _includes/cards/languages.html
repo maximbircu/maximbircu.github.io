@@ -1,0 +1,20 @@
+<aside class="languages aside section">
+    <div class="section-inner">
+        <h2 class="heading">Languages</h2>
+        <div class="content">
+            <ul class="list-unstyled">
+                {% for language in site.data.cards.languages %}
+                    <li class="item">
+                        <span class="title"><strong>{{ language.name }}:</strong></span>
+                        <span class="level">{{ language.level-label }} <br class="visible-sm visible-xs"/>
+                            {% for level in (1..language.level) %}
+                                <i class="fa fa-star"></i>
+                            {% endfor %} 
+                        </span>
+                    </li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+</aside>
+    
