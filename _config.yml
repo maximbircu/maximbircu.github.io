@@ -7,7 +7,6 @@ url: "https://maximbircu.com"
 
 # Build settings
 markdown: kramdown
-permalink: preatty
 plugins:
   - jekyll-feed
   - jekyll-autoprefixer
