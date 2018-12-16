@@ -19,3 +19,5 @@ exclude:
   - Gemfile.lock
 sass:
   sass_dir: _sass
+
+highlighter: rouge
