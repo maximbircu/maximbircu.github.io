@@ -1,9 +1,9 @@
 <div class="heading-wrapper col-lg-3 col-md-4 col-sm-12">
     <div class="heading-content row">
-        <img class="profile-image img-responsive" src="assets/images/profile.png" alt="Maxim"/>
+        <img class="profile-image img-responsive" src="{{ base.siteurl }}/assets/images/profile.png" alt="Maxim"/>
         <h1 class="profile-description-title">Hey, I'm {{ site.data.sidebar.shortname }},</h1>
         <h4 class="profile-description">a Moldavian <span class="job-title">{{ site.data.sidebar.ocupation }}</span> working in Moldova at {{ site.data.sidebar.company }}</h4>
-        <a class="contact-me-btn row" href="{{ site.baseurl }}/{{ page.buttonUrl }}">{{ page.buttonName }}</a>
+        <a class="contact-me-btn row" href="{{ site.baseurl }}/{{ layout.buttonUrl }}">{{ layout.buttonName }}</a>
         <div class="contacts">
             <ul class="social list-inline">
                 <li><a href="{{ site.data.accounts.twitter }}"><i class="fa fa-twitter"></i></a></li>
