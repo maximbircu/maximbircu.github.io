@@ -19,3 +19,9 @@
 <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/assets/css/theme-styles.css">
 <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/assets/css/styles.css">
 <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/assets/css/railscasts.css">
+
+
+<!-- Google analytics -->
+{% if jekyll.environment == 'production' %}
+    {% include analytics.html %}
+{% endif %}
