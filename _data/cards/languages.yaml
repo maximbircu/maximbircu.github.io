@@ -1,3 +1,7 @@
+# name - language name
+# level-label - language speaking level ex: (Professional, Native Speaker, Beginner...)
+# level - language speaking level in points from 0 to 5
+
 - name: English
   level-label: Professional
   level: 3

@@ -1,3 +1,13 @@
+# shortname - your shortname
+# ocupation - your ocupation ex: (Software Enginer)
+# company - company where do you work ex: (Ellation)
+# profile-image - profile image url
+#   name - account name ex: (twitter)
+#   url - account profile url
+#   icon - account icon css class ex: (fa-github)
+
 shortname: Max
 ocupation: Software Engineer
 company: Ellation
+profile-image: assets/images/data/profile.png
+    
