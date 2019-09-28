@@ -1,16 +1,35 @@
-@keyframes slide
+@keyframes slide-right
     0%
         transform: translate3d(-100%, 0px, 0px)
-        opacity: .1
     100%
         transform: translate3d(0px, 0px, 0px)
+
+@keyframes slide-left
+    0%
+        transform: translate3d(0, 0px, 0px)
         opacity: 1
-    
+    100%
+        transform: translate3d(-100%, 0px, 0px)
+        opacity: 0
+
+.heading-wrapper-close
+    animation: slide-left 0.4s 1 forwards
+    animation-delay: 0.1s
+
+.heading-wrapper-open
+    animation: slide-right 0.6s 1
+
 .heading-wrapper
     height: 100%
     background-color: rgb(50, 186, 188)
     padding: 0
-    animation: slide 0.6s 1
+
+.heading-wrapper div
+    user-select: none
+    -moz-user-select: none
+    -khtml-user-select: none
+    -webkit-user-select: none
+    -o-user-select: none
 
 .heading-content
     display: block
