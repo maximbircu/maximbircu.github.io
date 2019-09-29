@@ -13,7 +13,7 @@ When I just started getting familiar with neural nets I was reading hundreds of 
 
 Yeh, and probably an interesting question is how I didn't get bored while reading all this theoretical stuff well, the answer is very simple
 
-> "I get very, very, very bored!" :dissapointed:
+> "I get very, very, very bored!" :disappointed:
 
 But still, after a huge number of complex math articles and white nights, I didn't have a complete understanding of what a Neural Net model really is.
 
