@@ -1,13 +1,16 @@
 <!doctype html>
 <html lang="en">
+
 <head>
     {% include head.html %}
     {% include js-link.html %}
 </head>
-<body>
-<div class="content-container row">
-    {% include sidebar.html %}
-    {{ content }}
-</div>
+
+<body class="body">
+    <div class="content-container row">
+        {% include sidebar.html %}
+        <input class="l dark-mode-toggler" type="checkbox">
+        {{ content }}
+    </div>
 </body>
 </html>
