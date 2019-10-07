@@ -4,67 +4,118 @@ layout: post
 comments: true
 image: assets/images/posts/introduction-to-machine-learning/machine-learning.jpg
 ---
-This post aims to introduce you to the huge universe of Machine Learning. It's not a very technical one and serves more as an introduction part for my 2 next posts about Neural Networks and how to use them.
+This post aims to introduce you to the vast universe of Machine Learning. It's not a very technical one and serves more 
+as an introductory part for my next posts about Neural Networks and their practical application.
 
 ## History
 
-Well, it's used to be that if you want to make a computer do something new you have to program it. This means that you have to know and define each instruction that it should execute step by step to do that for you.
+Thus, it's used to be that if you want to make a computer do something new, you have to program it. 
+This means you have to know and define each instruction; it should execute step by step to do that for you.
 
-But what if you want the computer to do something you don't know how to do yourself?
+But what if you want the computer to accomplish something you don't know how to realize yourself? :thinking:
 
-Well, this could be a challenge. And this challenge was faced by Arthur Samuel in 1956. He wanted to get the IBM704 computer shown in the picture below bit him at checkers.
+Well, this could be a challenge… And the challenge was faced for the first time by Arthur Samuel in 1956 
+when he decided to make the IBM704 computer, shown in the picture below, beat him at checkers.
 
-<img src="{{ site.baseUrl }}/assets/images/posts/introduction-to-machine-learning/arthur_samuel.jpg" >
+<img alt="Arthur Samuel" src="{{ site.baseUrl }}/assets/images/posts/introduction-to-machine-learning/arthur_samuel.jpg" />
 
-IBM704 was a machine that you have to program by feeding magnetic tape into a big drum and even if checkers was a pretty simple game it was not able to run every possible move by trial and error in order to find the best one for winning the game or at least not in a reasonable amount of time.
+IBM704 was a machine that you have to program by feeding magnetic tape into a big drum and, even if checkers was 
+a pretty simple game, it was not able to run each and every possible move by trial and error to find the best one for 
+winning the game or at least not in a reasonable amount of time.
 
-Otherwise, it could solve the problem using brute force which involves the computer to play out every possible game that could take place after each move to pick that one with the highest winning probability. However, this is not the most creative way to solve the problem but well, a valid one. Unfortunately were not enough resources in 1956 for such an approach. So the first game played by AI was possible thanks to heuristics.
 
-A heuristic is basically a rule of thumb, It may not be exactly right but it's almost always mostly right. In computer science, a heuristic is a computer algorithm that limits brute force searching by selecting solutions that may not be the best but are good enough.
+Otherwise, it could solve the problem using brute force, which involves the computer to play out every possible game 
+that could take place after each move to pick that one with the highest winning probability. 
+And even though this is not the most creative way to solve the problem, it's a valid one. Unfortunately, there were not
+enough resources in 1956 for such an approach. 
+
+So, the first game played by AI was possible, thanks to heuristics.
+
+A heuristic is basically a rule of thumb, It may not be exactly right, but it's almost always mostly right. 
+In computer science, a heuristic is a computer algorithm that limits brute force searching by selecting solutions 
+that may not be the best but are good enough.
 
 Using heuristics in his algorithm Arthur Samuel become a pioneer of computer gaming and artificial intelligence.
 
-## Machine learning in commercial use
+## Machine Learning in Commercial Use
 
-Today machine learning is widely used for commercial purposes by big companies like Google, Facebook, Amazon, Netflix, Linkedin etc… 
-Probably you never thought about how Facebook or LinkedIn knows who your friends might be, or how Netflix or Amazon suggest the products or movies that you would like to buy or to watch. All this is possible due to the power of machine learning. All these companies are developing algorithms that learn from data rather than being programmed by hand.
+Today machine learning is widely used in commercial purposes by big companies like Google, Facebook, Amazon, Netflix, 
+Linkedin, etc. Probably, you never thought about how Facebook or Linkedin knows who your friends might be or how Netflix
+or Amazon suggests the products or movies that you would like to buy or to watch. All this is possible due to the power
+of machine learning. All these companies are developing algorithms that learn from data rather than being programmed 
+by hand.
 
 Due to these algorithms, we all were able to see the first driving car.
 
-<img src="{{ site.baseUrl }}/assets/images/posts/introduction-to-machine-learning/self_driving_car.jpeg" >
+<img alt="Self driving car" src="{{ site.baseUrl }}/assets/images/posts/introduction-to-machine-learning/self_driving_car.jpeg" />
 
-Being able to detect and classify objects in the street is quite important for a self-driving car but we don't know how to write all these programs by hand. However, we can build a machine learning model that will learn to do this.
+Being able to detect and classify objects in the street is crucial for a self-driving car, but we don't know how to 
+write all these programs manually. Nevertheless, we can build a machine learning model that will learn to do this for us.
 
-Nowadays machine learning models are able to detect not only some objects in the pictures, but they are also able to make sense of them. Below are some pictures with labels generated by machine learning models that describe what's happening in the picture.
+Nowadays, machine learning models are not only capable of detecting some objects in the pictures, but they are also able
+to make sense of them. Here are some pictures with labels below generated by machine learning models that describe 
+what's happening in them.
 
-<img src="{{ site.baseUrl }}/assets/images/posts/introduction-to-machine-learning/image-recognition.jpg" >
+<img alt="Image recognition" src="{{ site.baseUrl }}/assets/images/posts/introduction-to-machine-learning/image-recognition.jpg" />
 
-I bet you asked yourself how Google classifies your photos in different directories and give them meaningful names. Just try to think about how complicated or almost impossible is this by writing a simple program.
+I bet you asked yourself how Google classifies your photos in different directories and give them meaningful names. 
+Just try to think about how complicated or almost impossible is this by writing a simple program.
 
-## Machine learning in Art
+## Machine Learning in Arts
 
-What was a mind explosion for me is when I found that machine learning is also good at art. Below are some pictures generated by a computer.s
+What a mind explosion was for me when I found that machine learning is also good at arts. 
+Here is a picture generated by a machine learning model.
 
-<img src="{{ site.baseUrl }}/assets/images/posts/introduction-to-machine-learning/art_1.jpeg" >
+<img alt="ML in art" src="{{ site.baseUrl }}/assets/images/posts/introduction-to-machine-learning/art_2.jpeg" />
 
-<img src="{{ site.baseUrl }}/assets/images/posts/introduction-to-machine-learning/art_2.jpeg" >
+More than that, computers can also write music. Here is a song generated by a machine learning model that was trained 
+on Beatle's songs.
+
+<iframe width="420" height="315" src="http://www.youtube.com/embed/LSHZ_b05W7o" frameborder="0" allowfullscreen></iframe>
 
 ## What the hell are these ML models?
 
-So what machine learning actually is. Well, if human beings learn from experience and a computer follows the instructions than machine learning will be something in the middle. This will be an algorithm that is able to learn from experience or to be more correct from data, big amounts of data.
+So, what machine learning actually is. If human beings learn from experience and a computer follows the instructions, 
+then machine learning will be something in the middle. This will be an algorithm that can learn from experience or, to 
+be more correct from data, significant amounts of data.
 
-<img src="{{ site.baseUrl }}/assets/images/posts/introduction-to-machine-learning/machine-learning-example.png" >
+<img alt="Machine learning example" src="{{ site.baseUrl }}/assets/images/posts/introduction-to-machine-learning/machine-learning-example.png" />
 
-There are 3 types of learning algorithms Supervised, Unsupervised and Reinforcement learning. I'll cover just the first one because it will be used in my 2 next blog posts.
+There are 3 types of learning algorithms `Supervised`, `Unsupervised`, and `Reinforcement`. 
+I'll cover just the first one because it will be used in my upcoming posts.
 
-Supervised learning: is the machine learning task of learning a function that maps an input to an output based on example input-output pairs. 
-Well, a quite abstract definition that's why let's do an example. I'll ask you to think a bit and answer what's the next number in the picture below.
+_Supervised learning is the machine learning task of learning a function that maps an input to an output based on example
+input-output pairs._ 
 
-<img src="{{ site.baseUrl }}/assets/images/posts/introduction-to-machine-learning/induction-example.png" >
+Well, a quite abstract definition, that's why let me bring an example.
+I'll ask you to think a bit and guess the next number in the picture below.
 
-Yes! the right answer is 81 and I am happy to let you know that you applied a supervised learning approach to find it. Just stay and think a bit about how you managed to succeed in this task. Most probably you observed a relation between input and output values which in your opinion is `output = input²`. Well, this might be not the right assumption, the right function could be for example output = input² except 9 however the function you've thought about is quite close to the right one cause it will give correct answers to all input numbers except 9. This means that when you thought about input² function you did a function approximation of output = input² except 9 based on the labeled set that I gave you.
+<img alt="Induction table" src="{{ site.baseUrl }}/assets/images/posts/introduction-to-machine-learning/induction-example.png" />
 
-So if we conclude supervised learning is nothing else than function approximation. It's when you gather some information from a labeled dataset that helps you label another one. Don't want to go to dip into all this stuff but just want to let you know that Machine Learning problems solved using supervised learning could be divided into classification and regression ones. Classification is when you take a bunch of data as input and map it to a discreet label while regression is when the out to which you map you input values is a real value. You'll see an example of classification in the next 2 posts and here is some more information about regression.
+**Yes!** :tada:
+
+The right answer is `81`, and I am happy to let you know that you applied a supervised learning approach to find it. 
+Just stay and think a bit about how you managed to succeed in this task. Most probably, you observed a relation between 
+input and output values, which in your opinion, is `output = input²`. 
+
+Well, this might not be the right assumption because the proper function could be, for example, 
+`output = input² except 9`; however, the function you've thought about is very close to the right one, and it will 
+give correct answers to all input numbers except 9. This means that when you thought about `output = input²` function, 
+you did nothing else than a function approximation of `output = input² except 9` based on the labeled set that I gave to you.
+
+Thus, if we conclude, supervised learning is nothing else than function approximation. It's when you gather some 
+information from a labeled dataset that helps you label another one. Don't want to go too deep into all this stuff but 
+just want to let you know that Machine Learning problems solved using supervised learning could be divided into 
+classification and regression ones.
+
+Classification is when you take a bunch of data as input and map it to a discreet set of labels, while regression is 
+when the output value of your model is a part of a continuous set of values. 
+You'll see an example of classification in my upcoming posts, 
+and [here](https://www.analyticsvidhya.com/blog/2015/08/comprehensive-guide-regression/) is some more information about 
+regression.
 
 ## Conclusion
-Machine learning is a new fastly growing powerful field which is able to solve problems that are not an easy task for a human being. Check out my 2 next posts that will bring more light on this topic by some simple practical example.
+
+Machine Learning is a new fastly growing, powerful field that can solve problems that are not an easy task for a human 
+being. Check out my next posts that will bring more light on this topic with a more detailed theory and some simple, 
+practical examples.
