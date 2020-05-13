@@ -1,5 +1,3 @@
-const cookie = new Cookie();
-
 const themes = {
     dark: 'dark',
     light: 'light',

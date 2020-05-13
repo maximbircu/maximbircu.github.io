@@ -23,3 +23,5 @@ function Cookie () {
         return null;
     };
 }
+
+const cookie = new Cookie();
