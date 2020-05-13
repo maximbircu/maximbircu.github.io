@@ -1,204 +1,203 @@
 @keyframes slide-right
-    0%
-        transform: translate3d(-100%, 0px, 0px)
-    100%
-        transform: translate3d(0px, 0px, 0px)
+  0%
+    transform: translate3d(-100%, 0px, 0px)
+  100%
+    transform: translate3d(0px, 0px, 0px)
 
 @keyframes slide-left
-    0%
-        transform: translate3d(0, 0px, 0px)
-        opacity: 1
-    100%
-        transform: translate3d(-100%, 0px, 0px)
-        opacity: 0
+  0%
+    transform: translate3d(0, 0px, 0px)
+    opacity: 1
+  100%
+    transform: translate3d(-100%, 0px, 0px)
+    opacity: 0
 
 @keyframes slide-up
-    0%
-        transform: translate3d(0, 0px, 0px)
-        opacity: 1
-    100%
-        transform: translate3d(0px, -100%, 0px)
-        opacity: 0
+  0%
+    transform: translate3d(0, 0px, 0px)
+    opacity: 1
+  100%
+    transform: translate3d(0px, -100%, 0px)
+    opacity: 0
 
 @keyframes slide-down
-    0%
-        transform: translate3d(0px, -100%, 0px)
-    100%
-        transform: translate3d(0px, 0px, 0px)
+  0%
+    transform: translate3d(0px, -100%, 0px)
+  100%
+    transform: translate3d(0px, 0px, 0px)
 
 .heading-wrapper-close
-    animation: slide-left 0.4s 1 forwards
-    animation-delay: 0.1s
+  animation: slide-left 0.4s 1 forwards
+  animation-delay: 0.1s
 
 .heading-wrapper-open
-    animation: slide-right 0.6s 1
+  animation: slide-right 0.6s 1
 
 .heading-wrapper
-    height: 100%
-    background-color: rgb(50, 186, 188)
-    padding: 0
+  height: 100%
+  background-color: rgb(50, 186, 188)
+  padding: 0
 
 .heading-wrapper div
-    user-select: none
-    -moz-user-select: none
-    -khtml-user-select: none
-    -webkit-user-select: none
-    -o-user-select: none
+  user-select: none
+  -moz-user-select: none
+  -khtml-user-select: none
+  -webkit-user-select: none
+  -o-user-select: none
 
 .heading-content
-    display: block
-    margin: auto
-    width: 100%
-    height: 100%
+  display: block
+  margin: auto
+  width: 100%
+  height: 100%
 
 .profile-image
-    position: relative
-    margin: 20% auto auto
-    width: 200px
-    height: 200px
-    animation: rotate 1s infinite
+  position: relative
+  margin: 20% auto auto
+  width: 200px
+  height: 200px
+  animation: rotate 1s infinite
 
-.profile-description-title 
-    padding-top: 20px
-    text-align: center
-    color: white
-    font-weight: 100
+.profile-description-title
+  padding-top: 20px
+  text-align: center
+  color: white
+  font-weight: 100
 
-.profile-description 
-    margin: 40px
-    text-align: center
-    color: white
-    font-weight: 100
-    line-height: 1.5em
+.profile-description
+  margin: 40px
+  text-align: center
+  color: white
+  font-weight: 100
+  line-height: 1.5em
 
 .job-title
-    font-weight: 600
+  font-weight: 600
 
 .social .fa
-    font-size: 20px
-    margin: 2px
-    color: white
+  font-size: 20px
+  margin: 2px
+  color: white
 
 .contacts
-    margin: 20px
-    text-align: center
+  margin: 20px
+  text-align: center
 
-.contact-me-btn 
-    position: relative
-    margin: auto
-    width: 154px
-    height: 50px
-    display: block
-    border-radius: 30px
-    color: #32BABC
-    font: normal normal normal 20px/1.4em helveticaneuew01-55roma, sans-serif
-    text-align: center
-    padding-top: 16px
-    font-size: 15px
-    text-decoration: inherit
-    background-color: rgba(255, 255, 255, 1)
-    cursor: pointer !important
+.contact-me-btn
+  position: relative
+  margin: auto
+  width: 154px
+  height: 50px
+  display: block
+  border-radius: 30px
+  color: #32BABC
+  font: normal normal normal 20px/1.4em helveticaneuew01-55roma, sans-serif
+  text-align: center
+  padding-top: 16px
+  font-size: 15px
+  text-decoration: inherit
+  background-color: rgba(255, 255, 255, 1)
+  cursor: pointer !important
 
 .item-heading
-    margin-bottom: 15px
-    padding-left: 0
+  margin-bottom: 15px
+  padding-left: 0
 
-@media only screen and (max-width: 992px) 
-    .heading-wrapper 
-        height: auto
+@media only screen and (max-width: 992px)
+  .heading-wrapper
+    height: auto
 
-    .heading-content
-        height: auto
+  .heading-content
+    height: auto
 
-    .heading-wrapper-close
-        animation: slide-up 0.4s 1 forwards
-        animation-delay: 0.1s
+  .heading-wrapper-close
+    animation: slide-up 0.4s 1 forwards
+    animation-delay: 0.1s
 
-    .heading-wrapper-open
-        animation: slide-down 0.6s 1
+  .heading-wrapper-open
+    animation: slide-down 0.6s 1
 
-    .profile-image 
-        position: absolute
-        margin-top: 20px
-        width: 120px
-        height: 120px
-        margin-left: 40px
+  .profile-image
+    position: absolute
+    margin-top: 20px
+    width: 120px
+    height: 120px
+    margin-left: 40px
 
-    .contact-me-btn 
-        right: 0
-        margin-top: 110px
-        margin-right: 20px
-        margin-bottom: 10px
-        padding-top: 5px
-        height: 30px
+  .contact-me-btn
+    right: 0
+    margin-top: 110px
+    margin-right: 20px
+    margin-bottom: 10px
+    padding-top: 5px
+    height: 30px
 
-    .profile-description-title 
-        position: absolut
-        float: left
-        font-size: 20px
-        margin-top: 10px
-        margin-bottom: 5px
-        margin-left: 180px
+  .profile-description-title
+    position: absolut
+    float: left
+    font-size: 20px
+    margin-top: 10px
+    margin-bottom: 5px
+    margin-left: 180px
 
-    .profile-description 
-        position: absolute
-        float: left
-        font-size: 13px
-        margin-top: 60px
-        margin-left: 180px
-        margin-bottom: 25px
-        text-align: left
+  .profile-description
+    position: absolute
+    float: left
+    font-size: 13px
+    margin-top: 60px
+    margin-left: 180px
+    margin-bottom: 25px
+    text-align: left
 
-    .contacts
-        display: inline-block
-        margin-top: 0
-        margin-left: 176px
-        position: absolute
-        top: 89px
-        
+  .contacts
+    display: inline-block
+    margin-top: 0
+    margin-left: 176px
+    position: absolute
+    top: 89px
 
 
-@media only screen and (max-width: 645px) 
-    .contacts
-        top: 100px
+@media only screen and (max-width: 645px)
+  .contacts
+    top: 100px
 
 @media only screen and (max-width: 540px)
-    .contact-me-btn
-        padding-top: 6px
-        width: 100px
-        font-size: 12px
+  .contact-me-btn
+    padding-top: 6px
+    width: 100px
+    font-size: 12px
 
 @media only screen and (max-width: 465px)
-    .contact-me-btn
-        padding-top: 6px
-        width: 50px
+  .contact-me-btn
+    padding-top: 6px
+    width: 50px
 
-    .contact-me-btn i 
-        font-size: 20px
+  .contact-me-btn i
+    font-size: 20px
 
-    .contacts .fa 
-        font-size: 15px
-    
-@media only screen and (max-width: 434px) 
-    .profile-description 
-        margin-top: 56px
+  .contacts .fa
+    font-size: 15px
 
-    .contacts 
-        top: 115px
+@media only screen and (max-width: 434px)
+  .profile-description
+    margin-top: 56px
 
-    .contacts .fa 
-        font-size: 15px
+  .contacts
+    top: 115px
+
+  .contacts .fa
+    font-size: 15px
 
 @media only screen and (max-width: 400px)
-    .contact-me-btn
-        width: 100px
+  .contact-me-btn
+    width: 100px
 
-    .profile-description 
-        display: none
+  .profile-description
+    display: none
 
-    .contacts
-        margin-top: -50px
+  .contacts
+    margin-top: -50px
 
 @media only screen and (max-width: 364px)
-    .profile-description
-        font-size: 12px
+  .profile-description
+    font-size: 12px
