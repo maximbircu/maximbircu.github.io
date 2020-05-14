@@ -73,7 +73,7 @@ on Beatle's songs.
 
 <iframe width="420" height="315" src="http://www.youtube.com/embed/LSHZ_b05W7o" frameborder="0" allowfullscreen></iframe>
 
-## What the hell are these ML models?
+## What the Hell Are These ML Models?
 
 So, what machine learning actually is. If human beings learn from experience and a computer follows the instructions, 
 then machine learning will be something in the middle. This will be an algorithm that can learn from experience or, to 
