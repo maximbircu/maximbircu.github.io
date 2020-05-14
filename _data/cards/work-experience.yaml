@@ -5,25 +5,32 @@
 # companyWebSiteUrl - the url of commpany web site
 # duration - working duration
 
-- companyName: Tekwill
-  position: "Android Fundamentals Mentor"
-  logoUrl: /assets/images/data/cards/work-experience/tekwill.png
-  companyWebSiteUrl: http://academy.tekwill.md/
-  duration: "07/2018 - Present"
 
-- companyName: Ellation
+
+- companyName: Crunchyroll
   position: "Android Developer"
-  logoUrl: /assets/images/data/cards/work-experience/ellation.png
+  description: "As an Android developer at Crunchyroll, I am helping the Android team to develop and maintain Crunchyroll branded apps. We write our projects in Kotlin at high quality. Besides mobile apps, I also contribute to the the team's internal tooling infrastructure participating in development of different useful utilities and scripts including CI services."
+  logoUrl: /assets/images/data/cards/work-experience/crunchyroll.jpg
   companyWebSiteUrl: http://www.ellation.com/
   duration: "04/2018 - Present"
 
+- companyName: Technical University of Moldova
+  position: "University Assistant"
+  description: "As a university assistant at the Technical University of Moldova, I am mentoring PBL(Project-based learning) English tough student groups, and students who're writing their diploma. I am helping them with the complex problems they face during the development process of their projects."
+  logoUrl: /assets/images/data/cards/work-experience/tum.png
+  companyWebSiteUrl: https://utm.md/en/
+  duration: "09/2019 - Present"
+
+- companyName: Tekwill
+  position: "Android Fundamentals Mentor"
+  description: "As an Android Fundamentals Mentor at Tekwill, I developed a brand new Android Fundamentals course from scratch and taught it to 2 groups of Android beginners."
+  logoUrl: /assets/images/data/cards/work-experience/tekwill.png
+  companyWebSiteUrl: http://academy.tekwill.md/
+  duration: "07/2018 - 03/2019"
+
 - companyName: "JivyGroup"
   position: "Software Enginer"
-  description: "Working on multiple different projects for JivyGrop, 
-  maintaining trading mobile application of MarketsPulse and development of new mobile native projects also doing sometimes 
-  devops stuff and writing som scripts for CI of the mobile and other projects from the company. 
-  Maintaining of MarketsPulse web sites working on CMS improvments, working on new versions of MP sites based on React technologies."
+  description: "As a software engineer at Jivy, I was working on multiple different projects supporting MarketsPulse binary trading mobile native applications and .NET web sites. I was also doing some DevOps stuff and writing different scripts for CI services of the company's projects."
   logoUrl: /assets/images/data/cards/work-experience/jivygroup.png
   companyWebSiteUrl: http://www.jivygroup.com/
   duration: "06/2016 - 03/2018"
-  
