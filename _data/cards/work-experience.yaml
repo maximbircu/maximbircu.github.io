@@ -5,10 +5,8 @@
 # companyWebSiteUrl - the url of commpany web site
 # duration - working duration
 
-
-
 - companyName: Crunchyroll
-  position: "Android Developer"
+  position: "Lead Android Developer"
   description: "As an Android developer at Crunchyroll, I am helping the Android team to develop and maintain Crunchyroll branded apps. We write our projects in Kotlin at high quality. Besides mobile apps, I also contribute to the the team's internal tooling infrastructure participating in development of different useful utilities and scripts including CI services."
   logoUrl: /assets/images/data/cards/work-experience/crunchyroll.jpg
   companyWebSiteUrl: http://www.ellation.com/
@@ -16,7 +14,7 @@
 
 - companyName: Technical University of Moldova
   position: "University Assistant"
-  description: "As a university assistant at the Technical University of Moldova, I am mentoring PBL(Project-based learning) English tough student groups, and students who're writing their diploma. I am helping them with the complex problems they face during the development process of their projects."
+  description: "As an university assistant at the Technical University of Moldova, I am mentoring PBL(Project-based learning) English tough student groups, and students who're writing their diploma. I am helping them with the complex problems they face during the development process of their projects."
   logoUrl: /assets/images/data/cards/work-experience/tum.png
   companyWebSiteUrl: https://utm.md/en/
   duration: "09/2019 - Present"
