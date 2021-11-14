@@ -4,21 +4,20 @@
 
 - title: "Java, Kotlin &amp; Android"
   label: "Expert"
-  level : 66
+  level : 80
 
-- title: "C# &amp; .NET"
+- title: "CI &amp; CD"
   label: "Expert"
-  level : 50
+  level : 60
 
-- title: "Pyhton"
+- title: "Leadership"
   label: "Expert"
-  level : 30
-
-- title: "C &amp; C++"
-  label: "Intermediate"
   level : 40
+
+- title: "Software Architecture &amp; Design"
+  label: "Expert"
+  level: 70
 
 - title: "Machine Learning"
   label: "Baby steps"
   level : 35
-  
