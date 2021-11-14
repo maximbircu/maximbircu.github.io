@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-theme='dark'>
 
 <head>
     {% include head.html %}
@@ -9,7 +9,9 @@
 <body class="body">
     <div class="content-container row">
         {% include sidebar.html %}
-        <input class="l dark-mode-toggler" type="checkbox">
+        <button class="js__dark-mode-toggle dark-mode-toggle" type="button">
+            <span class="dark-mode-toggle__icon"></span>
+        </button>
         {{ content }}
     </div>
 </body>

@@ -1,56 +1,44 @@
 const themes = {
     dark: 'dark',
     light: 'light',
-};
+}
 
-const defaultTheme = themes.dark;
+let ThemeController = function (toggleButton) {
+    let themeRefreshListeners = []
+    let getThemeOpposite = (theme) => theme === 'dark' ? 'light' : 'dark'
+    toggleButton.prop('checked', this.theme === 'light')
+    toggleButton.click(() => {
+        cookie.set('theme', getThemeOpposite(this.theme))
+        this.refreshTheme()
+    })
 
-getCurrentTheme = function () {
-    'use strict';
-    return cookie.get('theme') || defaultTheme;
-};
+    this.refreshTheme = () => {
+        this.theme = cookie.get('theme') || themes.dark
+        console.log(this.theme)
+        document.documentElement.setAttribute('data-theme', this.theme)
+        themeRefreshListeners.forEach((listener) => listener(this.theme))
+    }
 
-getThemeOpposite = function (theme) {
-    'use strict';
-    return theme === 'dark' ? 'light' : 'dark';
-};
+    this.addThemeRefreshListener = (listener) => {
+        themeRefreshListeners.push(listener)
+    }
 
-removeThemeStyles = function (theme) {
-    'use strict';
-    $('#' + theme).remove();
-};
-
-loadThemeStyles = function (theme) {
-    'use strict';
-    let link = document.createElement('link');
-    link.id = theme;
-    link.rel = 'stylesheet';
-    link.type = 'text/css';
-    link.href = '/assets/css/' + theme + '-styles.css';
-    document.getElementsByTagName('head')[0].appendChild(link);
-};
-
-loadThemeStyles(getCurrentTheme());
+    this.removeThemeRefreshListener = (listener) => {
+        themeRefreshListeners.splice(themeRefreshListeners.indexOf(listener), 1)
+    }
+}
 
 jQuery(document).ready(function ($) {
-    'use strict';
-    let toggleButton = $('.dark-mode-toggler');
-    toggleButton.prop('checked', getCurrentTheme() === themes.light);
-    toggleButton.click(function () {
-        let currentTheme = getCurrentTheme();
-        let newTheme = getThemeOpposite(currentTheme);
-        cookie.set('theme', newTheme);
-        removeThemeStyles(currentTheme);
-        loadThemeStyles(newTheme);
-        loadDisqus();
-    });
+    const toggleButton = $('.dark-mode-toggle')
+    const themeController = new ThemeController(toggleButton)
+    themeController.refreshTheme()
 
     $('.sections-wrapper').scroll(function () {
         if ($(this).scrollTop() > 10) {
-            toggleButton.hide();
+            toggleButton.hide()
         } else {
-            toggleButton.show();
+            toggleButton.show()
         }
-    });
-});
+    })
+})
 

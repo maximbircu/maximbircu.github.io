@@ -1,0 +1,564 @@
+@import "railscasts"
+
+body
+  font-family: 'Lato', arial, sans-serif
+  color: var(--body-text-color)
+  background: var(--body-background-color)
+  overflow: hidden
+  font-size: 16px
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+
+h1, h2, h3, h4, h5, h6
+  font-family: 'Montserrat', sans-serif
+  font-weight: 700
+  color: var(--headers-color)
+
+hr
+  border-color: var(--border-color)
+  opacity: var(--hr-opacity)
+
+
+a
+  color: #3AAA64
+  -webkit-transition: all 0.4s ease-in-out
+  -moz-transition: all 0.4s ease-in-out
+  -ms-transition: all 0.4s ease-in-out
+  -o-transition: all 0.4s ease-in-out
+
+  &:hover
+    text-decoration: underline
+    color: #5f6b77
+    color: #2d844e
+
+  &:focus
+    text-decoration: none
+
+.btn, a.btn
+  -webkit-transition: all 0.4s ease-in-out
+  -moz-transition: all 0.4s ease-in-out
+  -ms-transition: all 0.4s ease-in-out
+  -o-transition: all 0.4s ease-in-out
+  font-family: 'Montserrat', arial, sans-serif
+  padding: 8px 16px
+  font-weight: bold
+
+.btn .fa, a.btn .fa
+  margin-right: 5px
+
+.btn:focus
+  color: #fff
+
+a
+  &.btn:focus
+    color: #fff
+
+  &.btn-cta-primary
+    background: #54ba4e
+    border: 1px solid #54ba4e
+    color: #fff
+    font-weight: 600
+    text-transform: uppercase
+
+.btn-cta-primary
+  background: #54ba4e
+  border: 1px solid #54ba4e
+  color: #fff
+  font-weight: 600
+  text-transform: uppercase
+
+a.btn-cta-primary:hover, .btn-cta-primary:hover
+  background: #49ac43
+  border: 1px solid #49ac43
+  color: #fff
+
+a.btn-cta-secondary, .btn-cta-secondary
+  background: #479FC8
+  border: 1px solid #479FC8
+  color: #fff
+  font-weight: 600
+  text-transform: uppercase
+
+a.btn-cta-secondary:hover, .btn-cta-secondary:hover
+  background: #3893bd
+  border: 1px solid #3893bd
+  color: #fff
+
+.text-highlight
+  color: #32383e
+
+.label-theme
+  background: #3AAA64
+  font-size: 12px
+
+a.dotted-link
+  border-bottom: 1px dotted #778492
+  color: #778492
+
+  &:hover
+    text-decoration: none
+    color: #49515a
+
+/*
+ *iframe {
+ *
+ *    .header {
+ *        padding: 0;
+ *    }
+ *}
+ *
+ *.iframe-wrapper {
+ *    overflow: auto;
+ *    -webkit-overflow-scrolling:touch;
+ *}
+
+
+
+/* ======= Sidebar =======
+.header
+  padding: 30px 0
+  background: #f5f5f5
+  border-top: 10px solid #778492
+
+  .btn
+    margin-top: 60px
+    font-weight: bold
+
+  .profile-image
+    margin-right: 30px
+
+  .profile-content
+    .name
+      color: #49515a
+      font-size: 38px
+      margin-bottom: 5px
+      margin-top: 30px
+
+    .desc
+      color: #778492
+      font-family: "Lato", arial, sans-serif
+      font-weight: 400
+      font-size: 24px
+      margin-top: 0
+      margin-bottom: 15px
+
+    .social a
+      background: #b0b7bf
+      width: 36px
+      height: 36px
+      display: inline-block
+      -webkit-border-radius: 50%
+      -moz-border-radius: 50%
+      -ms-border-radius: 50%
+      -o-border-radius: 50%
+      border-radius: 50%
+      -moz-background-clip: padding
+      -webkit-background-clip: padding-box
+      background-clip: padding-box
+      color: #fff
+      text-align: center
+
+      &:hover
+        background: #778492
+
+      .fa
+        font-size: 20px
+        padding-top: 8px
+
+
+/* ======= Sections=======
+.sections-wrapper
+  padding-top: 60px
+  padding-bottom: 60px
+
+.section
+  margin-bottom: 30px
+  box-shadow: 1px 0 18px var(--secion-shadow-color)
+
+  .section-inner
+    background: var(--section-inner-background-color)
+    padding: 30px
+
+  .heading
+    margin-top: 0
+    margin-bottom: 30px
+    color: var(--heading-color)
+    font-size: 24px
+
+  .content .more-link .fa
+    margin-right: 5px
+    font-size: 14px
+
+
+/* Latest Section
+.latest
+  .item
+    margin-bottom: 30px
+
+    .title
+      font-size: 18px
+      margin-top: 0
+
+      .label
+        margin-left: 5px
+        font-size: 12px
+
+      a
+        color: #778492
+
+        &:hover
+          color: #5f6b77
+
+    .project-image:hover
+      -webkit-opacity: 0.8
+      -moz-opacity: 0.8
+      opacity: 0.8
+
+  .divider
+    margin-bottom: 60px
+
+  .featured
+    margin-bottom: 60px
+
+    .title
+      margin-bottom: 5px
+      font-size: 20px
+
+    .summary
+      margin-bottom: 30px
+      color: #778492
+
+    img, .desc
+      margin-bottom: 30px
+
+  .featured-image
+    position: relative
+
+    .text
+      background: #3AAA64
+      color: #fff
+
+    .ribbon
+      position: absolute
+      top: -4px
+      right: -4px
+      width: 110px
+      height: 110px
+      overflow: hidden
+
+      .text
+        font-family: 'Montserrat', sans-serif
+        position: relative
+        left: -8px
+        top: 18px
+        width: 158px
+        padding: 10px 10px
+        font-size: 15px
+        font-weight: bold
+        text-align: center
+        text-transform: uppercase
+        color: #fff
+        background-color: #479FC8
+        -webkit-transform: rotate(45deg) translate3d(0, 0, 0)
+        -moz-transform: rotate(45deg) translate3d(0, 0, 0)
+        -ms-transform: rotate(45deg) translate3d(0, 0, 0)
+        -o-transform: rotate(45deg) translate3d(0, 0, 0)
+
+        &:before, &:after
+          content: ''
+          position: absolute
+          bottom: -5px
+          border-top: 5px solid #276582
+          border-left: 5px solid transparent
+          border-right: 5px solid transparent
+
+        &:before
+          left: 0
+
+        &:after
+          right: 0
+
+
+/* Projects Section
+.projects .item
+  margin-bottom: 30px
+
+  .title
+    font-size: 16px
+    margin-top: 0
+    margin-bottom: 5px
+    line-height: 1.5
+
+    a
+      color: #778492
+
+      &:hover
+        color: #5f6b77
+
+
+/* Work Section
+.experience .item
+  margin-bottom: 30px
+
+  .title
+    font-size: 16px
+    margin-top: 0
+    margin-bottom: 5px
+    line-height: 1.5
+
+    .place
+      color: #999
+      font-weight: normal
+
+      a
+        color: #999
+
+        &:hover
+          color: #666666
+
+    .year
+      color: #999
+      font-weight: normal
+
+
+/* Git section
+.github-graph
+  margin-bottom: 30px
+
+  .js-calendar-graph-svg
+    max-width: 100%
+
+.ghfeed
+  height: 600px
+  -webkit-box-sizing: content-box
+  -moz-box-sizing: content-box
+  box-sizing: content-box
+
+  *
+    -webkit-box-sizing: content-box
+    -moz-box-sizing: content-box
+    box-sizing: content-box
+
+    &:before, &:after
+      -webkit-box-sizing: content-box
+      -moz-box-sizing: content-box
+      box-sizing: content-box
+
+
+/* Info Section
+.info
+  .fa
+    margin-right: 15px
+    color: #ccd1d6
+
+    &.fa-envelope-o
+      font-size: 14px
+
+  ul
+    margin-bottom: 0
+
+  li
+    margin-bottom: 15px
+
+    &:last-child
+      margin-bottom: 0
+
+
+/* Skills Section
+.skills
+  .intro
+    margin-bottom: 30px
+
+  .skillset
+    .item
+      margin-bottom: 30px
+
+    .level-title
+      font-size: 16px
+      position: relative
+      margin-top: 0
+      margin-bottom: 10
+
+      .level-label
+        color: #ccd1d6
+        font-size: 14px
+        font-weight: 400
+        font-family: "Lato", arial, sans-serif
+        position: absolute
+        right: 0
+        top: 0
+
+    .level-bar
+      height: 15px
+      background: #e8e8e8
+
+    .level-bar-inner
+      height: 15px
+      background: #66cb8c
+
+
+/* Testimonials section
+.testimonials .item
+  margin-bottom: 30px
+
+  &:last-child
+    margin-bottom: 0
+
+  .quote
+    color: var(--testimonials-quote-color)
+    font-size: 16px
+    border-left-color: #9fdeb7
+    margin-bottom: 15px
+
+    .fa
+      color: #79d19a
+      margin-right: 15px
+
+  .source
+    font-size: 14px
+    padding-left: 30px
+    font-weight: 500
+
+    .name
+      color: #939ea9
+      font-weight: 600
+
+    .title
+      color: #999
+
+
+/* Education section
+.education .item
+  margin-bottom: 30px
+
+  &:last-child
+    margin-bottom: 0
+
+  .title
+    font-size: 16px
+    margin-top: 0
+
+  .university
+    font-family: "Lato", arial, sans-serif
+    font-size: 13px
+    color: #999
+    font-weight: 600
+    padding-left: 25px
+
+    .year
+      color: #b0b7bf
+      font-weight: 500
+
+
+/* Language Section
+.languages .item
+  margin-bottom: 15px
+
+  .title
+    color: #778492
+
+  .level
+    color: #999
+
+  &:last-child
+    margin-bottom: 0
+
+  .fa
+    color: #79d19a
+
+
+/* Blog Section
+.blog .item
+  margin-bottom: 30px
+
+  .title
+    font-size: 18px
+    line-height: 1.3
+
+    a
+      color: #778492
+
+      &:hover
+        color: #5f6b77
+
+  &:last-child
+    margin-bottom: 0
+
+
+/* List section
+.list ul li
+  margin-bottom: 10px
+
+  .fa
+    margin-right: 5px
+
+  a
+    color: #778492
+
+    &:hover
+      color: #49515a
+
+
+/* Credits
+.credits
+  ul li
+    margin-bottom: 10px
+
+    .fa
+      margin-right: 5px
+
+    a
+      color: #778492
+
+      &:hover
+        color: #49515a
+
+  .btn
+    margin-bottom: 15px
+
+
+/* ======= Footer =======
+.footer
+  background: #32383e
+  color: #fff
+  padding: 10px 0
+
+  .copyright
+    line-height: 1.6
+    color: #a1aab4
+    font-size: 14px
+
+  a
+    color: #fff
+
+  .fa-heart
+    color: #fb866a
+
+
+/* Extra small devices (phones, less than 768px)
+@media (max-width: 767px)
+  .header
+    text-align: center
+
+    .profile-image
+      float: none !important
+      margin: 0 auto
+
+    .profile-content
+      float: none !important
+      text-align: center
+
+    .btn
+      margin-top: 30px
+      float: none !important
+
+  .project-image
+    margin-bottom: 15px
+
+/* Small devices (tablets, 768px and up)
+/* Medium devices (desktops, 992px and up)
+/* Large devices (large desktops, 1200px and up)
+/* Ex-Large devices (large desktops, 1200px and up)
+@media (min-width: 1400px)
+  .container
+    width: 1360px

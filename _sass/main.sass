@@ -1,4 +1,23 @@
-@import 'base/base'
+@import 'colors/colors'
+@import 'theme-base/theme-base'
+@import 'widgets/dark-mode-toggle-button'
 @import 'includes/includes'
 @import 'blog'
 @import 'post'
+
+.content-container
+  height: 100%
+  width: 100%
+  position: absolute
+  right: 0
+  left: 0
+  margin: 0
+
+::-webkit-scrollbar
+  width: 0px
+  background: transparent
+  display: none
+
+::-webkit-scrollbar-thumb
+  background: #FF0000
+  display: none

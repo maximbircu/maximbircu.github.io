@@ -30,7 +30,7 @@
     margin: 20px auto 20px auto
 
   strong
-    color: #778492
+    color: var(--post-wrapper-strong-color)
     font-weight: bold
 
   .emoji
@@ -55,9 +55,6 @@
   ol
     line-height: 2.2em
 
-  li
-    color: #dadada
-
   blockquote
     border-left: inherit
 
@@ -72,6 +69,9 @@
     margin: auto auto
 
 .highlighter-rouge
+  color: var(--post-highliter-rouge-color)
+  background: var(--post-highliter-rouge-background-color)
+  border: 1px solid var(--post-highliter-rouge-border-color)
   border-radius: 10px
   margin-bottom: 20px
   .highlight

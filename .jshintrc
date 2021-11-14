@@ -11,10 +11,11 @@
   "noempty": true,
   "nonbsp": true,
   "unused": true,
-  "strict": true,
+  "strict": false,
   "maxdepth": 3,
   "maxlen": 100,
   "nomen": true,
   "trailing": true,
-  "esversion": 6
+  "esversion": 6,
+  "asi": true
 }

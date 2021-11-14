@@ -1,5 +1,6 @@
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <meta name="description" content="{{ site.description }}">
 <title>{{ site.title }}</title>
@@ -17,13 +18,9 @@
 <link rel="stylesheet" href="{{ site.baseurl }}/assets/plugins/github-activity/src/github-activity.css">
 <link rel="stylesheet" href="{{ site.baseurl }}/assets/plugins/github-activity/src/octicons.min.css">
 
-<link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/assets/css/theme-styles.css">
 <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/assets/css/styles.css">
-<link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/assets/css/railscasts.css">
-
-<link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/assets/css/bulb.css">
 
 <!-- Google analytics -->
 {% if jekyll.environment == 'production' %}
-    {% include analytics.html %}
+{% include analytics.html %}
 {% endif %}
