@@ -1,0 +1,60 @@
+---
+layout: ping-pong
+---
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Viglino/iconicss@master/dist/iconicss.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<link href="ping-pong/ping-pong.css" rel="stylesheet"/>
+<script type="module" src="ping-pong/ping-pong.js"></script>
+
+<audio id="ball-audio">
+    <source src="ping-pong/sounds/ball.mp3" type="audio/mpeg"/>
+</audio>
+<audio id="win-audio">
+    <source src="ping-pong/sounds/applause.mp3" type="audio/mpeg"/>
+</audio>
+<audio id="background">
+    <source src="ping-pong/sounds/background.mp3" type="audio/mpeg"/>
+</audio>
+
+<audio id="tick">
+    <source src="ping-pong/sounds/tick.mp3" type="audio/mpeg"/>
+</audio>
+
+<div class="sections-wrapper sections-wrapper-open col-lg-9 col-md-8 col-sm-12">
+    <div class="game-container">
+        <a href="https://github.com/maximbircu/ping-pong-game" class="icss-github-corner"><i></i></a>
+        <section id="main-menu-screen" class="screen active-screen">
+            <div id="button-one-player" class="menu-button main-menu-button">Play with Me!</div>
+            <div id="button-two-players" class="menu-button main-menu-button">Multiplayer</div>
+        </section>
+
+        <section id="game-screen" class="screen">
+            <section id="game-menu">
+                <div id="go-to-main-menu-button" class="menu-button game-menu-button">
+                    <div id="#close-button">
+                        <div class="close-button-first-line">
+                            <div class="close-button-second-line"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="right-group">
+                    <div class="game-menu-button">
+                        <a href="#" id="mute-button" class="game-mute-button-speaker-icon"><span></span></a><br/>
+                    </div>
+                </div>
+            </section>
+            <div id="count-down-timer-container"><span id="count-down-timer-label">&nbsp;</span></div>
+            <div id="score">
+                <span id="left-score">0</span> : <span id="right-score">0</span>
+            </div>
+            <canvas id="game-canvas"></canvas>
+        </section>
+    </div>
+    <div class="fallback-container">
+        <img src="/ping-pong/img.png" alt="">
+    </div>
+</div>
+

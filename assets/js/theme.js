@@ -11,10 +11,10 @@ let ThemeController = function (toggleButton) {
         cookie.set('theme', getThemeOpposite(this.theme))
         this.refreshTheme()
     })
+    toggleButton.mousedown((event) => event.preventDefault())
 
     this.refreshTheme = () => {
         this.theme = cookie.get('theme') || themes.dark
-        console.log(this.theme)
         document.documentElement.setAttribute('data-theme', this.theme)
         themeRefreshListeners.forEach((listener) => listener(this.theme))
     }
