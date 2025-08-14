@@ -2,22 +2,22 @@
 # level-label - performance of the skill in one word
 # data-level - performance of the skill in percentage
 
-- title: "Java, Kotlin &amp; Android"
+- title: "Kotlin &amp; Java"
+  label: "Expert"
+  level : 90
+
+- title: "Android &amp; Compose"
+  label: "Expert"
+  level : 85
+
+- title: "Cross-Platform Arch"
   label: "Expert"
   level : 80
 
-- title: "CI &amp; CD"
+- title: "CI/CD Automation"
   label: "Expert"
-  level : 60
+  level : 85
 
-- title: "Leadership"
-  label: "Expert"
-  level : 40
-
-- title: "Software Architecture &amp; Design"
-  label: "Expert"
-  level: 70
-
-- title: "Machine Learning"
-  label: "Baby steps"
-  level : 35
+- title: "Tech Leadership"
+  label: "Advanced"
+  level : 75

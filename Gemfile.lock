@@ -87,6 +87,7 @@ GEM
 
 PLATFORMS
   arm64-darwin-21
+  arm64-darwin-24
 
 DEPENDENCIES
   execjs (= 2.7.0)

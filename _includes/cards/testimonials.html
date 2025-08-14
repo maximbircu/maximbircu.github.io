@@ -1,18 +1,86 @@
 <aside class="testimonials aside section">
-        <div class="section-inner">
-            <h2 class="heading">Testimonials</h2>
-            <div class="content">
-                {% for testimonial in site.data.cards.testimonials %}
-                    <div class="item">
-                        <blockquote class="quote">
-                            <p><i class="fa fa-quote-left"></i>{{ testimonial.content }}</p>
-                        </blockquote>
-                        <a href="{{ testimonial.author.linkedin }}}"><p class="source"><span class="name">{{ testimonial.author.name }}</span><br/><span class="title">{{ testimonial.author.position }}</span></a></p>
+    <div class="section-inner">
+        <h2 class="heading">Testimonials</h2>
+        <div class="content">
+            {% for testimonial in site.data.cards.testimonials %}
+            <div class="item">
+                <blockquote class="quote">
+                    <div class="testimonial-content" data-index="{{ forloop.index }}">
+                        <p><i class="fa fa-quote-left"></i>{{ testimonial.content }}</p>
                     </div>
-                {% endfor %}
-                <p><a class="more-link" href="{{ site.data.accounts.linkedin.url }}"><i class="fa fa-external-link"></i> More on Linkedin</a>
-                </p>
+                    <button class="testimonial-toggle" data-index="{{ forloop.index }}">
+                        <i class="fa fa-chevron-down"></i> More
+                    </button>
+                </blockquote>
+                <a href="{{ testimonial.author.linkedin }}}">
+                    <p class="source"><span class="name">{{ testimonial.author.name }}</span><br /><span
+                            class="title">{{ testimonial.author.position }}</span>
+                </a></p>
             </div>
+            {% endfor %}
+            <p><a class="more-link" href="{{ site.data.accounts.linkedin.url }}"><i class="fa fa-external-link"></i>
+                    More on Linkedin</a>
+            </p>
         </div>
-    </aside>
-    
+    </div>
+</aside>
+
+<style>
+    .testimonial-content {
+        max-height: 4.5em;
+        /* Approximately 3 lines */
+        overflow: hidden;
+        transition: max-height 0.3s ease;
+        line-height: 1.5em;
+    }
+
+    .testimonial-content.expanded {
+        max-height: none;
+    }
+
+    .testimonial-toggle {
+        background: none;
+        border: none;
+        color: #666;
+        cursor: pointer;
+        font-size: 0.9em;
+        margin-top: 5px;
+        padding: 2px 0;
+        text-decoration: none;
+    }
+
+    .testimonial-toggle:hover {
+        color: #333;
+    }
+
+    .testimonial-toggle i {
+        transition: transform 0.3s ease;
+    }
+
+    .testimonial-toggle.expanded i {
+        transform: rotate(180deg);
+    }
+</style>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const toggleButtons = document.querySelectorAll('.testimonial-toggle');
+
+        toggleButtons.forEach(function (button) {
+            button.addEventListener('click', function () {
+                const index = this.getAttribute('data-index');
+                const content = document.querySelector('.testimonial-content[data-index="' + index + '"]');
+
+                if (content.classList.contains('expanded')) {
+                    content.classList.remove('expanded');
+                    this.innerHTML = '<i class="fa fa-chevron-down"></i> More';
+                    this.classList.remove('expanded');
+                } else {
+                    content.classList.add('expanded');
+                    this.innerHTML = '<i class="fa fa-chevron-up"></i> Less';
+                    this.classList.add('expanded');
+                }
+            });
+        });
+    });
+</script>

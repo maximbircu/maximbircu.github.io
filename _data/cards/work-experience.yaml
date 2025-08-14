@@ -6,11 +6,23 @@
 # duration - working duration
 
 - companyName: Crunchyroll
-  position: "Lead Android Developer"
-  description: "As an Android developer at Crunchyroll, I am helping the Android team to develop and maintain Crunchyroll branded apps. We write our projects in Kotlin at high quality. Besides mobile apps, I also contribute to the the team's internal tooling infrastructure participating in development of different useful utilities and scripts including CI services."
+  position: "Staff Android Engineer / Tech Lead"
+  description: "Led cross-platform architecture and feature delivery across Android Mobile, Android TV, and Apple platforms for one of the world's largest anime streaming services. Drove multi-team initiatives, modernized the codebase, and built internal tooling to boost developer productivity.
+  <br><br><strong>Key Achievements:</strong>
+  <ul>
+  <li><strong>Unified Native Player:</strong> Refactored TV player for reuse on mobile, improving playback smoothness and reducing web-player dependency.</li>
+  <li><strong>Cross-Platform Architecture:</strong> Guided migration from MVC/MVP to MVI/MVVM + Clean Architecture, integrated Hilt, migrated from Retrofit to Ktor, and enabled large-scale code sharing in a mono-repo.</li>
+  <li><strong>Server-Driven UI (SDUI):</strong> Designed and implemented a custom SDUI framework using annotation processors; later evolved into Foxhound.</li>
+  <li><strong>Multiple Profiles:</strong> Defined API contracts, coordinated backend + all client teams, and delivered the first simultaneous cross-platform feature launch in company history.</li>
+  <li><strong>Performance & Stability:</strong> Reduced video error rate from 4.5% → 1.5% (Mixpanel) and raised playback success score from 92 → 95 (Mux).</li>
+  <li><strong>AI-Driven Localization:</strong> Led integration of AI translation, expanding reach to new markets under tight deadlines.</li>
+  <li><strong>Developer Tooling:</strong> Created the \"Friday\" CLI and other automation scripts, cutting repetitive engineering tasks and release prep time.</li>
+  <li><strong>Release & Testing Strategy:</strong> Established a rotational release pilot program and restructured testing from Appium to Espresso after QA layoffs.</li>
+  <li><strong>Mentorship & Leadership:</strong> Provided architectural guidance to engineers across platforms, organized technical knowledge-sharing sessions, and influenced organization-wide engineering practices.</li>
+  </ul>"
   logoUrl: /assets/images/data/cards/work-experience/crunchyroll.jpg
-  companyWebSiteUrl: http://www.ellation.com/
-  duration: "04/2018 - Present"
+  companyWebSiteUrl: https://www.crunchyroll.com/
+  duration: "03/2018 - Present"
 
 - companyName: Technical University of Moldova
   position: "University Assistant"

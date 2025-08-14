@@ -4,23 +4,17 @@
 #   position - the author's job position
 #   linkedin - the author's linked in profile
 
-- content: "Maxim is one of the best among all people I have ever met.
-  Working with Maxim I found him as a fast learner person with great dedication,
-  passion and desire to do great things."
+- content: "I managed Maxim, and he was a tentpole of our Android team. He is a technical powerhouse with deep expertise in architecture and video playback. Maxim owned some of our most complex and critical projects, and his work on our native video player alone improved the user experience ten-fold across key metrics. He was also a champion of process optimization, leading improvements that reduced our release train from four weeks to two and saved the team roughly 40% of time. <br/><br/> Maxim's impact went beyond his code. He was the go-to expert for debugging the most difficult issues, and he set a high bar for quality that elevated the entire team. As a leader, his planning and communication skills were instrumental in helping the team ship efficiently, and he was an excellent mentor to his peers. Maxim is a true superstar, and I would hire him again in a heartbeat."
   author:
-    name: "Nicu Maxian"
-    position: "Senior Software Engineer"
-    linkedin: https://www.linkedin.com/in/nicu-maxian-b73105b1/
+    name: "Egor Neliuba"
+    position: "Senior Engineering Manager at Crunchyroll"
+    linkedin: https://www.linkedin.com/in/egorneliuba/
 
-- content: "Maxim is a talented and hardworking software
-  engineer with a critical thinking and wide variety of knowledge in different
-  areas of computer science. He is eager to share the knowledge with others and
-  doesn’t miss the opportunity to do so by creating amazing lectures and
-  delivering them with a great passion."
+- content: "I had the pleasure of working closely with Maxim on several high-impact initiatives at Crunchyroll. <br/> He consistently demonstrates strong technical expertise and ownership, leading critical features. Maxim’s ability to deliver under tight or ambiguous deadlines has been instrumental in moving projects forward. <br/> Beyond his technical skills, Maxim shows remarkable courage and a growth mindset, stepping up to tackle complex challenges without hesitation. His work ethic, reliability, and problem-solving approach make him an invaluable teammate. <br/> I’m confident that any team would benefit greatly from Maxim’s contributions."
   author:
-    name: "Victor Luca"
-    position: "Full Stack Developer"
-    linkedin: https://www.linkedin.com/in/luca-victor/
+    name: "Ilya (Ilie) Ghirici"
+    position: "Staff Software Engineer"
+    linkedin: https://www.linkedin.com/in/ilya-ghirici-9a300ba8/
 
 - content: "I've been working with Maxim on some individual projects.
   I was impressed by how he can handle complex tasks, especially related to software

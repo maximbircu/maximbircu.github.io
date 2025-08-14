@@ -3,9 +3,24 @@
         <h2 class="heading sr-only">Basic Information</h2>
         <div class="content">
             <ul class="list-unstyled">
-                <li><i class="fa fa-map-marker"></i><span class="sr-only">Location:</span>{{ site.data.cards.contacts.location }}</li>
-                <li><i class="fa fa-envelope-o"></i><span class="sr-only">Email:</span><a href="mailto:{{ site.data.cards.contacts.email }}">{{ site.data.cards.contacts.email }}</a></li>
-                <li><i class="fa fa-link"></i><span class="sr-only">Medium:</span><a href="#">{{ site.data.cards.contacts.medium }}</a></li>
+                <li><i class="fa fa-map-marker"></i><span class="sr-only">Location:</span>{{
+                    site.data.cards.contacts.location }}</li>
+                <li><i class="fa fa-envelope-o"></i><span class="sr-only">Email:</span><a
+                        href="mailto:{{ site.data.cards.contacts.email }}">{{ site.data.cards.contacts.email }}</a></li>
+                <li><i class="fa fa-file-text-o"></i><span class="sr-only">Resume:</span><a href="/my-resume"
+                        target="_blank">Resume</a></li>
+                <li><i class="fa fa-linkedin"></i><span class="sr-only">LinkedIn:</span><a
+                        href="{{ site.data.cards.contacts.linkedin }}" target="_blank">LinkedIn</a></li>
+                <li><i class="fa fa-github"></i><span class="sr-only">GitHub:</span><a
+                        href="{{ site.data.cards.contacts.github }}" target="_blank">GitHub</a></li>
+                <li><i class="fa fa-rss"></i><span class="sr-only">Blog:</span><a
+                        href="{{ site.baseurl }}/blog.html">Blog</a></li>
+                <li><i class="fa fa-medium"></i><span class="sr-only">Medium:</span><a
+                        href="{{ site.data.cards.contacts.medium }}" target="_blank">Medium</a></li>
+                {% if site.data.cards.contacts.telegram %}
+                <li><i class="fa fa-telegram"></i><span class="sr-only">Telegram:</span><a
+                        href="{{ site.data.cards.contacts.telegram }}" target="_blank">Telegram</a></li>
+                {% endif %}
             </ul>
         </div>
     </div>
